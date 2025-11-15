@@ -1,0 +1,255 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#container {
+    width: 100%;
+
+}
+#home {
+    width: 100%;
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px 20px 60px;
+    
+}
+.home-info {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.home-info h1 {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    white-space: nowrap
+}
+.home-info h1 span {
+    color: #FCB800;
+}
+.home-info p {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    white-space: nowrap
+}
+
+#menu {
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 20px 120px 20px 120px;
+
+}
+.card-title {
+    display: flex;
+    gap: 10px;
+    margin: 40px 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.card-title h1 {
+    font-size: 48px;
+    text-align: center;
+}
+.card-title p {
+    white-space: nowrap;
+}
+.cards {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 420px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    padding: 39px 70px 20px 70px;
+    border-radius: 25px;
+}
+
+.cards-inside .icon {
+    position: absolute;
+    bottom: 5%;
+    left: 80%;
+    
+}
+
+
+
+.cards-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards-info strong {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-top: auto;
+}
+
+.cards-info h3 {
+    
+    
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.cards-info p {
+    font-size: 18px;
+}
+
+.card .photo-eat {
+    height: 12.6vw;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media screen and (max-width: 865px) {
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card {
+        width: 300px;
+    }
+    .card .photo-eat {
+        height:   200px;
+    }
+    .card h3 {
+        padding-top: 0px;
+    }
+    #menu {
+        padding: 20px 70px;
+    }
+    .cards-inside img {
+        left: 75%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1485px) {
+    .home-image img {
+        width: 550px;
+    }
+    .home-info h1 {
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 40px;
+    }
+    .home-image img {
+        width: 700px;
+    }
+    .home-info {
+        gap: 15px;
+    }
+    .home-info h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .home-image img {
+        width: 500px;
+    }
+
+    .home-info h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home-image img {
+        width: 350px;
+    }
+
+    .home-info h1 {
+        font-size: 30px;
+    }
+    .home-info p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .home-image img {
+        width: 300px;
+    }
+    .home-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-info h1 {
+        font-size: 25px;
+    }
+    .home-info p {
+        font-size: 9px;
+    }
+}
