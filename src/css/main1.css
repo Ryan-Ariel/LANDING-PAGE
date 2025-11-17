@@ -75,6 +75,7 @@ html {
     width: 420px;
     
     display: flex;
+    
     justify-content: center;
     flex-direction: column;
     position: relative;
@@ -88,6 +89,22 @@ html {
     bottom: 5%;
     left: 80%;
     
+}
+
+
+/* estilo quando um item for favoritado */
+.cards-inside .icon.favorite {
+    background: #ff3b3b;
+    border-radius: 50%;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s ease;
+}
+
+.cards-inside .icon.favorite i {
+    color: #fff !important;
 }
 
 
@@ -148,9 +165,26 @@ html {
 }
 
 
+/*aboslute kcal*/
+.kcal {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0;
+    transition: .3s;
+    
+}
 
-
-
+.showkcal {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 1;
+}
 
 
 
