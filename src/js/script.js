@@ -18,34 +18,38 @@ mobileMenu.addEventListener("click", () => {
 
 
 const iconDivs = document.querySelectorAll(".cards-inside .icon") //selecionar todos que tiver .icon
-// container da ação de favorito: atualiza ícone e adiciona classe de estilo no container
-iconDivs.forEach(iconDiv => {
-    const iconFavorite = iconDiv.querySelector("i") // pegar o elemento <i>
+const divFavorite = document.querySelector(".cards-favorites")
+ 
+iconDivs.forEach(iconDiv => { //para cada div icon que tiver
+    const iconFavorite = iconDiv.querySelector("i") //pegar o i
 
-    iconDiv.addEventListener("click", () => {
-        const isRegular = iconFavorite.classList.contains("fa-regular")
-        if (isRegular) {
-            iconFavorite.classList.replace("fa-regular", "fa-solid")
-            iconDiv.classList.add('favorite') // adiciona fundo vermelho
-        } else {
-            iconFavorite.classList.replace("fa-solid", "fa-regular")
-            iconDiv.classList.remove('favorite')
-        }
-    })
+    iconDiv.addEventListener("click", () => {  //adiciona um evento nessa div icon que cliquei
+    
+    if(iconFavorite.classList.contains("fa-regular")) { 
+        iconFavorite.classList.replace("fa-regular", "fa-solid")
+        
+
+    } else { 
+        iconFavorite.classList.replace("fa-solid", "fa-regular")
+        
+    }
+})
+
+
 })
 
 
 
-// calories: existem dois checkboxes (desktop e mobile). Selecionamos todos e sincronizamos o estado
-const checkboxes = document.querySelectorAll('.checkbox-apple input[type="checkbox"]')
-const kcal = document.querySelectorAll('.kcal')
+//calories
+const chekedCalories = document.querySelector("#check-apple")
+const kcal = document.querySelectorAll(".kcal")
 
-checkboxes.forEach(cb => {
-    cb.addEventListener('change', (e) => {
-        const checked = e.target.checked
-        // sincroniza todos os checkboxes para o mesmo estado
-        checkboxes.forEach(c => c.checked = checked)
-        // aplica/remover a classe que mostra as calorias
-        kcal.forEach(item => item.classList.toggle('showkcal', checked))
+chekedCalories.addEventListener("change", () => {
+    kcal.forEach(item => {
+        if (chekedCalories.checked) {
+            item.classList.add("showkcal")
+        } else {
+            item.classList.remove("showkcal")
+        }
     })
 })

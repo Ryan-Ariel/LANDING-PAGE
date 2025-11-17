@@ -92,22 +92,6 @@ html {
 }
 
 
-/* estilo quando um item for favoritado */
-.cards-inside .icon.favorite {
-    background: #ff3b3b;
-    border-radius: 50%;
-    padding: 8px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background .2s ease;
-}
-
-.cards-inside .icon.favorite i {
-    color: #fff !important;
-}
-
-
 
 .cards-info {
     display: flex;
